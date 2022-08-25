@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | New Unity Project</title>
+    <title>Unity WebGL Player | CreateWithVR</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">New Unity Project</div>
+        <div id="unity-build-title">CreateWithVR</div>
       </div>
     </div>
     <script>
@@ -56,15 +56,15 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Complete floors.loader.js";
+      var loaderUrl = buildUrl + "/FIRST BUILT VR.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Complete floors.data.unityweb",
-        frameworkUrl: buildUrl + "/Complete floors.framework.js.unityweb",
-        codeUrl: buildUrl + "/Complete floors.wasm.unityweb",
+        dataUrl: buildUrl + "/FIRST BUILT VR.data.unityweb",
+        frameworkUrl: buildUrl + "/FIRST BUILT VR.framework.js.unityweb",
+        codeUrl: buildUrl + "/FIRST BUILT VR.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "New Unity Project",
-        productVersion: "1.0",
+        companyName: "com.Unity.CreateWithVR",
+        productName: "CreateWithVR",
+        productVersion: "0.1.0",
         showBanner: unityShowBanner,
       };
 
@@ -83,13 +83,11 @@
         meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
         document.getElementsByTagName('head')[0].appendChild(meta);
         container.className = "unity-mobile";
+        canvas.className = "unity-mobile";
 
         // To lower canvas resolution on mobile devices to gain some
         // performance, uncomment the following line:
         // config.devicePixelRatio = 1;
-
-        canvas.style.width = window.innerWidth + 'px';
-        canvas.style.height = window.innerHeight + 'px';
 
         unityShowBanner('WebGL builds are not supported on mobile devices.');
       } else {
