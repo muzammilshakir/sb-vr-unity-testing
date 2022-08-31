@@ -7,7 +7,7 @@
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <canvas id="unity-canvas" width=960 height=600 style="width: 960px; height: 600px; background: #231F20"></canvas>
-    <script src="Build/6.loader.js"></script>
+    <script src="Build/7 built.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -25,9 +25,10 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/6.data.unityweb",
-        frameworkUrl: "Build/6.framework.js.unityweb",
-        codeUrl: "Build/6.wasm.unityweb",
+        dataUrl: "Build/7 built.data.unityweb",
+        frameworkUrl: "Build/7 built.framework.js.unityweb",
+        codeUrl: "Build/7 built.wasm.unityweb",
+        symbolsUrl: "Build/7 built.symbols.json.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "VR 3d Pc Cont",
